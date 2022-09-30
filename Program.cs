@@ -49,7 +49,7 @@ double face6porcentagem = (face6 / lances) * 100;
 
 Console.WriteLine($"Quantas vezes cada face caiu? Face 1 = {face1}, Face 2 = {face2}, Face 3 = {face3}, Face 4 = {face4}, Face 5 = {face5} e Face 6 = {face6}");
 
-Console.WriteLine($"Porcentagem de cada face do dado em 30 tentativas \n" +
+Console.WriteLine($"Porcentagem de cada face do dado em {lances} tentativas \n" +
     $"Face 1 = {face1porcentagem.ToString("F")} % \n" +
     $"Face 2 = {face2porcentagem.ToString("F")} % \n" +
     $"Face 3 = {face3porcentagem.ToString("F")} % \n" +
