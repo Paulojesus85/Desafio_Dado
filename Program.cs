@@ -37,16 +37,16 @@ for (int contador = 1; contador < 301; contador++)
     }
 
 }
-double face1porcentagem = (face1 / 30) * 10;
-double face2porcentagem = (face2 / 30) * 10;
-double face3porcentagem = (face3 / 30) * 10;
-double face4porcentagem = (face4 / 30) * 10;
-double face5porcentagem = (face5 / 30) * 10;
-double face6porcentagem = (face6 / 30) * 10;
+double face1porcentagem = (face1 / 300) * 100;
+double face2porcentagem = (face2 / 300) * 100;
+double face3porcentagem = (face3 / 300) * 100;
+double face4porcentagem = (face4 / 300) * 100;
+double face5porcentagem = (face5 / 300) * 100;
+double face6porcentagem = (face6 / 300) * 100;
 
 Console.WriteLine($"Quantas vezes cada face caiu? Face 1 = {face1}, Face 2 = {face2}, Face 3 = {face3}, Face 4 = {face4}, Face 5 = {face5} e Face 6 = {face6}");
 
-Console.WriteLine($"Porcentagem de cada face do dado em 30 tentativas \n" +
+Console.WriteLine($"Porcentagem de cada face do dado em 300 tentativas \n" +
     $"Face 1 = {face1porcentagem.ToString("F")} % \n" +
     $"Face 2 = {face2porcentagem.ToString("F")} % \n" +
     $"Face 3 = {face3porcentagem.ToString("F")} % \n" +
