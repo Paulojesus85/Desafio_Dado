@@ -12,7 +12,7 @@ lances = Convert.ToInt32(Console.ReadLine());
 for (int contador = 1; contador < lances; contador++)
 {
     Random rnd = new Random();
-    int dice = rnd.Next(1, 7);
+    int dice = rnd.Next(1, 100);
 
     if (dice == 1)
     {
