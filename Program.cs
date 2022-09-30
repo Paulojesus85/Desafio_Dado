@@ -6,28 +6,28 @@ double face5 = 0;
 double face6 = 0;
 
 
-for (int contador = 1; contador < 31; contador++)
+for (int contador = 1; contador < 3000; contador++)
 {
     Random rnd = new Random();
-    int dice = rnd.Next(1, 7);
+    int dice = rnd.Next(1, 100);
 
-    if (dice == 1)
+    if (dice >= 1 && dice < 13 )
     {
         face1++;
     }
-    else if (dice == 2)
+    else if (dice >= 13 && dice < 26)
     {
         face2++;
     }
-    else if (dice == 3)
+    else if (dice >= 26 && dice < 39)
     {
         face3++;
     }
-    else if (dice == 4)
+    else if (dice >= 39 && dice < 52)
     {
         face4++;
     }
-    else if (dice == 5)
+    else if (dice >= 52 && dice < 65)
     {
         face5++;
     }
@@ -37,12 +37,12 @@ for (int contador = 1; contador < 31; contador++)
     }
 
 }
-double face1porcentagem = (face1 / 30) * 100;
-double face2porcentagem = (face2 / 30) * 100;
-double face3porcentagem = (face3 / 30) * 100;
-double face4porcentagem = (face4 / 30) * 100;
-double face5porcentagem = (face5 / 30) * 100;
-double face6porcentagem = (face6 / 30) * 100;
+double face1porcentagem = (face1 / 3000) * 100;
+double face2porcentagem = (face2 / 3000) * 100;
+double face3porcentagem = (face3 / 3000) * 100;
+double face4porcentagem = (face4 / 3000) * 100;
+double face5porcentagem = (face5 / 3000) * 100;
+double face6porcentagem = (face6 / 3000) * 100;
 
 Console.WriteLine($"Quantas vezes cada face caiu? Face 1 = {face1}, Face 2 = {face2}, Face 3 = {face3}, Face 4 = {face4}, Face 5 = {face5} e Face 6 = {face6}");
 
