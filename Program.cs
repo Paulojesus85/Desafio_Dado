@@ -14,23 +14,23 @@ for (int contador = 1; contador < lances; contador++)
     Random rnd = new Random();
     int dice = rnd.Next(1, 100);
 
-    if (dice == 1)
+    if (dice >= 1 && dice < 13)
     {
         face1++;
     }
-    else if (dice == 2)
+    else if (dice >= 13 && dice < 26)
     {
         face2++;
     }
-    else if (dice == 3)
+    else if (dice >= 26 && dice < 40)
     {
         face3++;
     }
-    else if (dice == 4)
+    else if (dice >= 40 && dice < 53)
     {
         face4++;
     }
-    else if (dice == 5)
+    else if (dice >= 53 && dice <= 66)
     {
         face5++;
     }
