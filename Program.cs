@@ -4,9 +4,12 @@ double face3 = 0;
 double face4 = 0;
 double face5 = 0;
 double face6 = 0;
+int lances;
 
+Console.WriteLine("Escolha quantas vezes você quer que o dado seja jogado:");
+lances = Convert.ToInt32(Console.ReadLine());
 
-for (int contador = 1; contador < 31; contador++)
+for (int contador = 1; contador < lances; contador++)
 {
     Random rnd = new Random();
     int dice = rnd.Next(1, 7);
@@ -37,12 +40,12 @@ for (int contador = 1; contador < 31; contador++)
     }
 
 }
-double face1porcentagem = (face1 / 30) * 100;
-double face2porcentagem = (face2 / 30) * 100;
-double face3porcentagem = (face3 / 30) * 100;
-double face4porcentagem = (face4 / 30) * 100;
-double face5porcentagem = (face5 / 30) * 100;
-double face6porcentagem = (face6 / 30) * 100;
+double face1porcentagem = (face1 / lances) * 100;
+double face2porcentagem = (face2 / lances) * 100;
+double face3porcentagem = (face3 / lances) * 100;
+double face4porcentagem = (face4 / lances) * 100;
+double face5porcentagem = (face5 / lances) * 100;
+double face6porcentagem = (face6 / lances) * 100;
 
 Console.WriteLine($"Quantas vezes cada face caiu? Face 1 = {face1}, Face 2 = {face2}, Face 3 = {face3}, Face 4 = {face4}, Face 5 = {face5} e Face 6 = {face6}");
 
